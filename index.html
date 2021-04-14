@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>banana speak</title>
     <!-- <script > console.log("script work")</script>   USING JAC=VA SCRIPT IN HTML. -->
+    <style>
+        textarea {
+            height: 16vh;
+            margin: 1rem;
+            padding: 1rem;
+            display: block;
+            width: 80%;
+
+        }
+        #output{
+            border: 1px solid black;
+            margin: 1rem;
+            padding: 1rem;
+            height: 20vh;
+            width: 80%;
+        }
+    </style>
 </head>
+
 <body>
     <h1>talk banana</h1>
+    <textarea id="text-input"
+        placeholder="Put your thoughts here in English . And it will convert it to Banana text. "></textarea>
     <button id="btn-translate">Translate</button>
-    
+    <div style="font-size: larger;">Output will come here 👇</div>
+    <div id="output"></div>
 
     <SCript src="app.js" type="text/javascript"></SCript>
 </body>
+
 </html>
